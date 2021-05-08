@@ -53,6 +53,7 @@ table {
     --cyan: rgb(74, 190, 189);
     --dk-cyan: rgb(43, 179, 177);
     --brt-yellow: hsl(71, 73%, 54%);
+    --trsp-brt-yellow: hsla(71, 73%, 54%, .8);
     --lg-gray: hsl(204, 43%, 93%);
     --gr-blue: hsl(218, 22%, 67%);
     --white: hsl(255, 100%, 100%);
@@ -133,6 +134,21 @@ h2 {
     border-radius: .3rem;
     margin-top: 1.3rem;
     box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, .1);
+}
+
+.btn:hover {
+    background-color: var(--trsp-brt-yellow);
+    outline: 2px solid var(--white);
+    animation: grow .5s forwards;
+}
+
+@keyframes grow {
+    0% {
+        font-size: 1rem;
+    }
+    100% {
+        font-size: 1.2rem;
+    }
 }
 
 .whyus {
